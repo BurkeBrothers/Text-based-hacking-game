@@ -1,0 +1,45 @@
+{
+	"directories": {
+		"Tutorial":{
+			"Johns-Computer": {
+				"Documents": {
+					"Document-Contents": "Email.txt"
+				},
+				"Downloads": "",
+				"Desktop": {
+					"Desktop-Contents": {
+						"Read-me": "README.txt"
+					}
+				}
+			}
+		},
+		"Mission1":{
+			"Jacks-Computer": {
+				"Documents": {
+					"Document-Contents": {
+						"Read-me": "README.txt"
+					},
+					"Bin": {
+						"Bin-Contents":{
+							"AdminTracer": "AdminTracker.exe",
+							"FirewallDisable": "FirewallCracker.exe"
+						}
+					}
+				}
+			},
+			"Adams-Computer": {
+				"Documents": {
+					"Document-Contents": {
+						"Read-me": "README.txt"
+					},
+					"Bin": {
+						"Bin-Contents":{
+							"Metasploit": "Metasploit.exe",
+							"BootModifier": "BootConfig.exe"
+						}
+					}
+				}
+			}
+		}
+	}
+}
