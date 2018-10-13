@@ -1,6 +1,4 @@
 import time
-import os
-import sys
 import Tutorial
 
 def HydraOsLogin():
