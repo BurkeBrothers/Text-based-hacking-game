@@ -1,8 +1,6 @@
 import time
 import os
 import sys
-import CommandErrors
-import Tutorial
 import json
 
 bank_acc = [0]
@@ -10,14 +8,13 @@ x = .5
 addedFiles = []
 
 operatingSystem = 'HydraOS'
-defaultPassword = 'HYDRA'
 idNumber = '1'
 sourceProgram = 'HydraHack'
 
 with open("Directories.json", "r") as read_file:
     data = json.load(read_file)
 
-def Main():
+def Start():
     print('Your first real mission is to hack a small company that has thousands of pounds worth of tools used in\n')
     time.sleep(x)
     print("hacking, which you will unlock later in the Game\n")
@@ -150,7 +147,7 @@ def ssh_jack():
                             print('File added')
                             time.sleep(2)
                         print('Yo, thanks for the files, ive added £500 to you bank account')
-                        bank_account.append(500)
+                        bank_acc.append(500)
 
     elif CommandEnter == 'cd Documents':
         CommandEnter = input('Jack@ArouraTesting/Documents~$ ')
@@ -164,4 +161,4 @@ def ssh_jack():
 def ssh_adam():
     pass
 
-Main()
+Start()
