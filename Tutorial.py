@@ -1,7 +1,6 @@
 import time
 import os
 import sys
-import CommandErrors
 import Mission1
 import json
 
@@ -91,7 +90,7 @@ def hack():
         CommandEnter = input('john@johny12~$ ')
 
         if CommandEnter == 'ls':
-            print('\n'.join(directories['Johns-Computer']))
+            print('\n'.join(data['directories']['Tutorial']['Johns-Computer']))
 
         print('Now you must change the directory so that you are in the Documents folder\n')
         CommandEnter = input('john@johny12/Home~$ ')
@@ -134,4 +133,4 @@ def hack():
                 print('Sent Message')
                 time.sleep(2)
                 print('Well done you completed the tutorial.')
-                Mission1.Main()
+                Mission1.Start()
